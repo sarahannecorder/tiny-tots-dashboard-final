@@ -1,0 +1,11 @@
+.workflow-container {
+padding-top: 80px;
+  display: block;
+  box-sizing: border-box;
+  width: 350px;
+  height:350px;
+  canvas {
+    display: block;
+    position: static;
+  }
+}

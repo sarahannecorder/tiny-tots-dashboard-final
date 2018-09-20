@@ -1,0 +1,44 @@
+
+
+.move-graph {
+	padding-top: 90px;
+}
+
+
+
+#stacked-graph {
+	display: flex;
+	margin-top: 200px;
+	padding-top: 40px;
+	padding: 20px;
+	background-color: white;
+	 -webkit-filter: drop-shadow(0.5px 0.5px 5px #9E9A9B );
+        filter: drop-shadow(0.5px 0.5px 5px #9E9A9B);
+
+
+  }
+
+
+
+@media all and (max-width: 720px){
+	#stacked-graph {
+		padding-top: 10px;
+	}
+}
+
+
+@media all and (max-width: 420px){
+	#stacked-graph {
+		margin-top: 100px;
+	}
+}
+
+
+@media all and (max-width: 380px){
+
+.move-graph {
+	padding-top: 100px;
+}
+
+}
+

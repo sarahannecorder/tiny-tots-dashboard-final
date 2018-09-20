@@ -1,0 +1,45 @@
+.profile-links {
+	display: in-line;
+	margin-top: 30px;
+
+	.btn {
+		text-decoration: none;
+		font-family: $font;
+		font-weight: 500;
+	}
+
+	ul {
+		list-style: none;
+		padding: 0px;
+    	margin: 0 auto;
+    	text-align: center;
+	}
+
+	li {
+		padding: 10px;
+	}
+
+	a {
+
+		text-decoration: none;
+		color: $whiteText;
+		padding: 5px;
+
+		&:hover {
+			color: $veryDarkPurple;
+		}
+	}
+
+	i {
+		color: $whiteText;
+
+		&:hover {
+			color: $veryDarkPurple;
+		}
+	}
+
+
+
+
+
+}

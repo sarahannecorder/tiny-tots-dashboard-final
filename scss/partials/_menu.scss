@@ -1,0 +1,44 @@
+.navbar {
+  ul.tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:0 auto;
+    padding:0;
+    
+    li {
+      display: inline-block;
+      padding: 40px;
+      margin: 0;
+      
+      a {
+        color: $greyText;
+        background: $whiteText;
+        padding: 20px;
+        border-radius: 25px;
+        text-decoration: none;
+        -webkit-filter: drop-shadow(0.5px 0.5px 5px #9E9A9B );
+        filter: drop-shadow(0.5px 0.5px 5px #9E9A9B);
+       
+        &.active {
+          color: $whiteText;
+          background: $purple;
+        }
+
+        &:hover {
+          color: $whiteText;
+           background: $darkPurple;
+
+        }
+
+      }
+      
+    }
+  }
+}
+
+@media all and (max-width: 420px){
+   .navbar ul.tabs li {
+    padding: 30px;
+  }
+}

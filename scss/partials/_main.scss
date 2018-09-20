@@ -1,0 +1,80 @@
+html, body {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font;
+  font-weight: $heading;
+}
+p {
+  font-family: $font;
+  font-weight: $paragraph;
+}
+
+main {
+  display: block;
+  box-sizing: inherit;
+  width: 100%;
+  font-family: $font;
+  font-weight: $paragraph;
+
+  
+  
+  .navbar {
+   display: flex;
+    height:100px;
+    top:0;
+    right:0;
+   
+    
+    @include medium {
+      width:100%;
+    }
+    @include small {
+      position: static;
+      width:100%;
+    }
+  }
+
+
+  #mainmenu {
+   margin: 0 auto;
+   padding-top: 30px;
+       width: 100%;
+    display: flex;
+   
+    
+    @include medium {
+      width:75%;
+    }
+    @include small {
+      position: static;
+      width:100%;
+    }
+  }
+
+  
+  .page {
+    width:80%;
+    min-height:100%;
+    top:100px;
+    margin-left:20%;
+    background-image: url(../img/tots-bg.png);
+    background-size: cover;
+    
+    
+    @include medium {
+      width:75%;
+      margin-left:25%
+    }
+    @include small {
+      width:100%;
+      margin-left:0;
+    }
+  }
+  
+}
+
+

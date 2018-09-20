@@ -1,0 +1,90 @@
+#employee-stats {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .employee-card {
+        flex: 1;
+        margin: 50px;
+        padding: 50px;
+        box-shadow: 0 6px 16px -4px $bgSidebar;
+        background: $whiteText;
+        text-align: center;
+        .profile-banner {
+            .portrait {
+                height: 200px;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+            }
+            h4 {
+                color: $midPurple;
+                font-size: 22px;
+            }
+        }
+        .information,
+        .monthly {
+
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            flex-direction: column;
+            h3 {
+                padding-top: 20px;
+                width: 100%;
+                color: $information;
+                margin: 12px 0 40px 0;
+            }
+            .target,
+            .sales {
+                color: $bgNav;
+                flex: 1;
+                position: relative;
+                &:before {
+
+                    bottom: 100%;
+                    width: 100%;
+                    left: 0;
+                }
+            }
+            .target {
+                &:before {
+                    content: "Target";
+                    padding: 20px;
+                }
+            }
+            .sales {
+                &:before {
+                    content: "Sales";
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+@media all and (max-width: 1024px) {
+
+    #employee-stats .employee-card {
+        margin-top: 100px;
+    }
+}
+
+@media all and (max-width: 730px) {
+
+    #employee-stats .employee-card {
+        margin-top: 200px;
+    }
+}
+
+
+
+
+@media all and (max-width: 488px) {
+
+    .target,
+    .sales {
+        font-size: 12px;
+    }
+}

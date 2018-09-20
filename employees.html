@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="animated fadeIn slower">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Tots | Childrenswear | Dashboard</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="css/hover-min.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="sidebar animated bounceInLeft" id="sidebar">
+            <!-- Components for Profile and Contextual Menu -->
+            <div id="profile">
+                <profile></profile>
+            </div>
+            <div id="dashmenu" class="animated bounceInUp">
+                <dash-menu></dash-menu>
+            </div>
+            <ul class="toggle-button">
+                <li>
+                    <span>Toggle Theme</span>
+                </li>
+            </ul>
+        </div>
+        <section class="page animated bounceInUp" id="page">
+            <nav class="navbar animated bounceInUp" id="navbar">
+                <!-- components for menus -->
+                <div id="mainmenu" class="animated bounceInUp">
+                    <main-menu></main-menu>
+                </div>
+            </nav>
+            <!-- components for specific pages -->
+            <div id="employee-stats">
+                <employee-stats img="img/zahra.png" name="Zahra Isaacs" information-birth="I.D# | 8910110202087" information-date="Employment Date | 01.02.2017" monthly-target="R 10 000.00" monthly-sales="R 8 000.00" class="animated bounceInUp delay-1s">
+                </employee-stats>
+                <employee-stats img="img/candice.png" name="Candice Swan" information-birth="I.D# | 855561870876" information-date="Employment Date | 18.05.2018" monthly-target="R 16 000.00" monthly-sales="R 15 000.00" class="animated bounceInUp delay-2s">
+                </employee-stats>
+                <employee-stats img="img/thandie.png" name="Thandie Hlope" information-birth="I.D# | 824561010876" information-date="Employment Date | 04.03.2016" monthly-target="R 22 000.00" monthly-sales="R 5 000.00" class="animated bounceInUp delay-3s">>
+                </employee-stats>
+        </section>
+    </main>
+    <script>
+    var menu = {
+        menus: [{
+                title: 'dashboard',
+                link: 'dashboard.html',
+                isActive: false
+            },
+            {
+                title: 'employees',
+                link: 'employees.html',
+                isActive: true
+
+            },
+            {
+                title: 'sales overview',
+                link: 'sales.html',
+                isActive: false
+
+            },
+        ]
+    }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js "></script>
+    <script type="text/javascript ">
+    $(document).ready(function() {
+
+        $('ul').click(function() {
+            $('ul').toggleClass('active')
+            $('main, .sidebar, .navbar, .toggle-button').toggleClass('dark')
+
+
+        })
+
+
+
+
+
+
+    })
+    </script>
+    <script src="js/vue.js"></script>
+    <script src="js/mainmenu.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/dashmenu.js"></script>
+    <!-- <script src="js/recent-messages.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    <script src="js/utils.js"></script>
+    <!-- <script src="js/stacked-graph.js"></script> -->
+    <!-- <script src="js/worklow.js"></script> -->
+    <script src="js/employee-stats.js"></script>
+</body>
+
+</html>

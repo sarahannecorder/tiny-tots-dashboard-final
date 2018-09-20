@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="animated fadeIn slower">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Tots | Childrenswear | Dashboard</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="css/hover-min.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="sidebar" id="sidebar">
+            <!-- Components for Profile and Contextual Menu -->
+            <div id="profile">
+                <profile></profile>
+            </div>
+            <div id="dashmenu">
+                <dash-menu></dash-menu>
+            </div>
+        </div>
+        <section class="page" id="page">
+            <nav class="navbar" id="navbar">
+                <!-- components for menus -->
+                <div id="mainmenu">
+                    <main-menu></main-menu>
+                </div>
+            </nav>
+            <!-- components for specific pages -->
+            <div id="recentMessages">
+                <recent-messages></recent-messages>
+            </div>
+            <div class="move-graph" style="width: 75%;padding-left: 8.5%">
+                <canvas id="stacked-graph"></canvas>
+            </div>
+            <div id="canvas-holder" style="width:75%;padding-left: 8.5%">
+                <canvas id="chart-area"></canvas>
+                
+            </div>
+    
+        </section>
+    </main>
+        <script>
+    var menu = {
+        menus: [{
+                title: 'dashboard',
+                link: 'dashboard.html',
+                isActive: true
+            },
+            {
+                title: 'employees',
+                link: 'employees.html',
+                isActive: false
+
+            },
+            {
+                title: 'sales overview',
+                link: 'sales.html',
+                isActive: false
+
+            },
+        ]
+    }
+    </script>
+    <script src="js/vue.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/dashmenu.js"></script>
+    <script src="js/mainmenu.js"></script>
+    <script src="js/recent-messages.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/dashboard-stats.js"></script>
+</body>
+
+</html>

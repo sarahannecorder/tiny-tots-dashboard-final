@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="animated fadeIn slower">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Tots | Childrenswear | Dashboard</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="css/hover-min.css" media="all" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="sidebar animated bounceInLeft" id="sidebar">
+            <!-- Components for Profile and Contextual Menu -->
+            <div id="profile" class="animated bounceInUp">
+                <profile></profile>
+            </div>
+            <div id="dashmenu" class="animated bounceInUp">
+                <dash-menu></dash-menu>
+            </div>
+            <ul class="toggle-button">
+                <li>
+                    <span>Toggle Theme</span>
+                </li>
+            </ul>
+        </div>
+        <section class="page animated bounceInUp" id="page">
+            <nav class="navbar animated bounceInUp" id="navbar">
+                <!-- components for menus -->
+                <div id="mainmenu" class="animated bounceInUp">
+                    <main-menu></main-menu>
+                </div>
+            </nav>
+            <!-- components for specific pages -->
+            <div id="recentMessages">
+                <recent-messages></recent-messages>
+            </div>
+            <div class="animated bounceInUp delay-1s" style="width:75%;padding-left: 10%">
+                <canvas id="overview"></canvas>
+                <!--<div id="workflow" class="workflow-container">
+        <canvas class="workflow-chart" id="myChart" width="400" height="400"></canvas>
+      </div>-->
+                <!--<div id="sales" class="sales-container">
+        <canvas id="sales-by-day"></canvas>
+      </div>-->
+        </section>
+    </main>
+    <script>
+    var menu = {
+        menus: [{
+                title: 'dashboard',
+                link: 'dashboard.html',
+                isActive: false
+            },
+            {
+                title: 'employees',
+                link: 'employees.html',
+                isActive: false
+
+            },
+            {
+                title: 'sales overview',
+                link: 'sales.html',
+                isActive: true
+
+            },
+        ]
+    }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js "></script>
+    <script type="text/javascript ">
+    $(document).ready(function() {
+
+        $('ul').click(function() {
+            $('ul').toggleClass('active')
+            $('main, .sidebar, .navbar, .toggle-button').toggleClass('dark')
+
+
+        })
+
+
+
+
+
+
+    })
+    </script>
+    <script src="js/vue.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/dashmenu.js"></script>
+    <script src="js/mainmenu.js"></script>
+    <script src="js/recent-messages.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/stacked-graph.js"></script>
+    <script src="js/worklow.js"></script>
+    <script src="js/overview.js"></script>
+</body>
+
+</html>

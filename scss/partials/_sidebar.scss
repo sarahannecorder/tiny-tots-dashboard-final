@@ -1,0 +1,133 @@
+.sidebar {
+  display: block;
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  left:0;
+  top:0;
+  background: $midPurple;
+  box-sizing: inherit;
+  
+  @include medium {
+    width: 25%;
+  }
+  
+  @include small {
+    position: static;
+    width: 100%;
+  }
+    
+  .dash-menu {
+    display: block;
+    box-sizing: inherit;
+    margin:25px 0;
+    padding:0;
+    width: 100%;
+    
+    h3 {
+      display: block;
+      box-sizing: inherit;
+      font-family: $font;
+      font-size: 16pt ;
+      font-weight: $heading;
+      color: $lightText;
+      width: 80%;
+      margin:0 auto;
+      margin-top:10px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 3px dotted #fff;
+      
+      @include medium {
+        font-size: 12pt;
+      }
+      @include small {
+        font-size: 10pt;
+      }
+    }
+    
+    ul {
+      display: block;
+      box-sizing: inherit;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      
+      li {
+        display: block;
+        box-sizing: inherit;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+         border-bottom: 3px dotted #fff;
+        
+        a {
+          color: $lightText;
+          text-decoration: none;
+          font-weight: $paragraph;
+          font-size: 10pt;
+          &:hover {
+            color: #5E3E58;
+          }
+          
+          i.fa {
+            float:right;
+            margin-top: 6px;
+          }
+        }
+      }
+      
+    }
+    
+  }
+}
+
+
+  .img-container img {
+    padding-top: 20px;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  } 
+
+
+  .profile-img img {
+    padding-top: 20px;
+    display: block;
+    margin: 0 auto;
+  }
+
+p { 
+      display: block;
+      width: 100%;
+      letter-spacing: 1.8px;
+      text-align: center;
+      margin: 0 auto;
+      color: $lightText;
+      font-size: 20px;
+
+  }
+
+@media all and (max-width: 640px) {
+
+ .img-container img {
+    padding-top: 20px;
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+  } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
